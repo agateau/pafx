@@ -14,7 +14,7 @@ def get_color_value(img, color):
     if img.mode == 'P':
         color = list(color)
         palette = img.getpalette()
-        transparent_idx = img.info['transparency'][0]
+        transparent_idx = img.info['transparency']
         for i in range(0, len(palette), 3):
             rgb = palette[i:i + 3]
             if rgb == color:
@@ -51,7 +51,7 @@ def get_pixel_alpha(img, xy):
     elif img.mode == 'RGB':
         return 255
     elif img.mode == 'P':
-        transparent_idx = img.info['transparency'][0]
+        transparent_idx = img.info['transparency']
         if pixel == transparent_idx:
             return 0
         else:
