@@ -3,7 +3,7 @@
 Pixel Art Fx
 
 :copyright: 2015 Aurélien Gâteau.
-:license: BSD.
+:license: Apache 2.0.
 """
 from setuptools import setup
 

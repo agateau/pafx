@@ -5,4 +5,4 @@ from pafx.paste import *
 
 __appname__ = 'pafx'
 __version__ = '0.1'
-__license__ = 'BSD'
+__license__ = 'Apache 2.0'
