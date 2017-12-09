@@ -9,7 +9,10 @@ BOTTOM_CENTER = (0.5, 1)
 BOTTOM_RIGHT =  (1, 1)
 
 def paste(dst, src, dst_anchor=CENTER, src_anchor=CENTER, left_offset=0, top_offset=0):
-    """Paste src into dst"""
+    """Paste src into dst, aligned according to src_anchor and dst_anchor.
+    Position can be adjusted by specifying left_offset and top_offset.  Offsets
+    always apply from left-to-right and top-to-bottom, regardless of the
+    anchors."""
     dstw, dsth = dst.size
     srcw, srch = src.size
 
