@@ -7,21 +7,19 @@ Pixel Art Fx
 """
 from setuptools import setup
 
-import pafx
-
 DESCRIPTION = 'Pixel Art effects'
 
 
-setup(name=pafx.__appname__,
-    version=pafx.__version__,
-    description=DESCRIPTION,
-    author='Aurélien Gâteau',
-    author_email='mail@agateau.com',
-    license=pafx.__license__,
-    platforms=['any'],
-    url='http://github.com/agateau/pafx',
-    install_requires=[
-        'pillow',
-    ],
-    packages=['pafx'],
-)
+setup(name='pafx',
+      version='0.1.0',
+      description=DESCRIPTION,
+      author='Aurélien Gâteau',
+      author_email='mail@agateau.com',
+      license='Apacke 2.0',
+      platforms=['any'],
+      url='https://github.com/agateau/pafx',
+      install_requires=[
+          'pillow',
+      ],
+      packages=['pafx'],
+      )
